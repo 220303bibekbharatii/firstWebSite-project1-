@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+       <a href="#"> <img src="logoo.png" height="90" class="logo" ></a> 
+       <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="shop.html">shop</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html"><i><img src="icon.webp" width="30px" height="30px"></i></a></li>
+            <Li><a  class="active" href="login.html">Account</a></Li>
+          
+        </ul>
+       </div>
+       
+    </section>
+ 
+
+
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+
+                    <form id="loginform">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+
+                    <form id="regform" >
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="email">
+                        <input type="text" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   
+    
+
+<footer class="section-p1">
+    <div class="col">
+        <img class="logo" src="logoo.png" height="80px" alt="">
+        <h4>Contact</h4>
+        <P><strong>Address:</strong>Anamnagar, Ghattekulo Road, KTM </P>
+        <p><strong>Phone:</strong>9866525821</p>
+        <p><strong>Hours:</strong>08:00-05:00, Sun - Fri</p>
+
+    <div class="Follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest-p"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+    </div>
+</div>
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About Us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Contact US</a>
+</div>
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+</div>
+<div class="col install">
+    <h4>Install App</h4>
+    <p>From App store or Google play</p>
+    <div class="row">
+        <img src="apps.png" alt="">
+        <img src="google.png" alt="">
+    </div>
+    <p>Secured Payment Gateway</p>
+    <img src="master.png" alt="">
+    <img src="visaa.png" alt="">
+    <img src="paypal.png" alt="">
+</div>
+
+</div>
+</footer>
+<footer>
+    <div class="copyright">
+        <p>© 2021, Tech2 etc - HTML CSS Ecommerce Template</p> 
+</footer>
+    <script src="script.js"></script>
+    <!----------js for toggle form -------->
+<script>
+    var loginform = document.getElementById("loginform")
+    var regform = document.getElementById("regform")
+    var indicator = document.getElementById("indicator")
+
+    function register(){
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indicator.style.transform = "translateX(100px)";
+
+    }
+     function login(){
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indicator.style.transform = "translateX(0px)";
+     }
+
+</script>
+
+</body>
+</html>
